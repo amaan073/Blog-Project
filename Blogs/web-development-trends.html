@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogPoint</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap');
+    </style>
+</head>
+
+<body style="background-color: var(--bs-body-bg);">
+
+    <header>
+        <div class="px-3 py-2 text-bg-dark border-bottom">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                  <h1 class="heading">Blog<span style="color: var(--bs-warning);">Point</span></h1>
+                </a>
+      
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small gap-2">
+                  <li>
+                    <a href="../index.html" class="nav-link home text-white" style="border-radius: 5px;" data-page="home">
+                      <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"></use></svg>
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="../about.html" class="nav-link about text-white"  style="border-radius: 5px;" data-page="about">
+                      <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#about"></use></svg>
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a href="../contact.html" class="nav-link contact text-white" style="border-radius: 5px;" data-page="contact">
+                      <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#contact"></use></svg>
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </header>
+
+    <main>
+
+      <div class="container">
+        <div class="image">
+          <img src="../images/Feature-Image-Web-Development-Tr.png" alt="web development trends 2024" class=" rounded mt-5 mb-3 col-lg-6 col-12" id="blog_image">
+        </div>
+        <p style="color: var(--bs-tertiary-color);"><b>Date: </b>October 1, 2023</p>
+        <div class="blog-description">
+          <h1 class="py-3">Web Development Trends</h1>
+          <p>
+            As we venture further into the digital age, web development continues to evolve at an unprecedented pace. One of the most significant trends shaping the future of web development is the integration of Artificial Intelligence (AI). AI technologies, such as machine learning and natural language processing, are transforming how websites function and interact with users. From chatbots providing instant customer support to personalized user experiences based on behavior analytics, AI is enhancing the efficiency and effectiveness of web applications. Developers are increasingly leveraging AI to automate repetitive tasks, optimize performance, and create more intuitive interfaces that adapt to user needs, making the web a more engaging and responsive environment. <br><br>
+            Another notable trend is the rise of Progressive Web Apps (PWAs), which combine the best features of mobile and web applications. PWAs offer a seamless user experience by providing fast loading times, offline capabilities, and push notifications, ensuring that users can access content anytime, anywhere. This trend is particularly important as mobile device usage continues to surge, with users expecting applications that are not only visually appealing but also highly functional. By adopting PWA technology, businesses can improve user retention and engagement, ultimately driving conversions and enhancing customer satisfaction. The shift towards PWAs signifies a broader movement toward creating more versatile and resilient web applications that cater to the diverse needs of users. <br> <br>
+            Moreover, the emphasis on user experience (UX) design is stronger than ever, as developers recognize its critical role in the success of web applications. A focus on UX involves understanding user behavior, preferences, and pain points to create intuitive and accessible interfaces. The use of responsive design, which ensures that websites function flawlessly across various devices and screen sizes, is becoming standard practice. Additionally, the incorporation of immersive technologies such as augmented reality (AR) and virtual reality (VR) is gaining traction, allowing developers to create more engaging and interactive experiences. As web development continues to adapt to changing user expectations and technological advancements, prioritizing UX will remain essential for businesses aiming to thrive in an increasingly competitive digital landscape. By staying informed about these trends, developers can harness innovative tools and techniques to build websites that not only meet but exceed user expectations.
+          </p>
+        </div>
+
+        <div class="engagement_section">
+
+          <div class="like" style="font-size: 1.3rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill " viewBox="0 0 16 16" style="display:none;">
+              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+            </svg>
+            <span class="likeCount">105</span>
+            Likes
+          </div>
+
+          <div class="comment" style="font-size: 1.3rem;" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16" style=" position: relative; bottom: 2px;">
+              <path d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+            </svg>
+            <span class="commentCount py-1">15</span> Comments
+            
+            <div class="commentForm my-4 border rounded p-3 bg-light col-xl-3 col-lg-4 col-md-6 col-sm-9 col-12">
+                <form class=>
+                  <div class="bd-example m-0 border-0">
+                    <div class="mb-3">
+                      <input type="email" class="form-control" name="Name" placeholder="Name" required>
+                    </div>
+                    <div class="mb-3">
+                      <textarea class="form-control" id="commentText" rows="6" placeholder="Leave a comment" required></textarea>
+                    </div>
+                    
+                    <input type="submit" value="Submit" onclick="handleForm(event)" class="btn btn-primary">
+                    
+                  </div>
+                </form>
+            </div>
+
+            <h1 class="mt-5 mb-3">Comments</h1>
+
+            <div class="commentList mt-4">
+              <div class="comment border-start border-dark border-3 rounded-end shadow w-100 p-4 my-3 bg-light" >
+                <h3>Amaan</h1>
+                <p>&nbsp; > Great insights on web development trends! Excited to see how AI and PWAs evolve!</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>  
+    </main>
+
+
+
+    <div class="footer text-center text-white p-3 mt-5"  style="background-color: var(--bs-secondary-color);">
+        © <span id="date">2024</span> BlogPoint. All rights reserved.
+    </div>
+    
+    <svg style="display: none;">
+        <symbol id="home" viewBox="0 0 16 16">
+            <path fill="white" d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+        </symbol>
+        <symbol id="about" viewBox="0 0 16 16">
+            <path fill="white" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11"/>
+        </symbol>
+        <symbol id="contact" viewBox="0 0 16 16">
+            <path fill="white" d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"></path>
+        </symbol>
+    </svg>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
