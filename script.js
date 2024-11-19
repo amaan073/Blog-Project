@@ -10,8 +10,7 @@ if(currentPage == "index") {
 navbar.forEach((nav) => {
     var targetLink = nav.getAttribute("data-page");
 
-    if (targetLink === currentPage) {
-        // Skip the active nav button, using return keyword which stops the normal flow of loop
+    if (targetLink === currentPage) { 
         return;
     }
 
@@ -56,7 +55,7 @@ likeIcon.addEventListener("click",()=> {
     likeIcon.style.display = "none";
     likeFilledIcon.style.display = "inline-block";
     likeCount.innerHTML = parseInt(likeCount.innerHTML) + 1;
-});                                     //no increment because its a static website
+});                                     
 
 likeFilledIcon.addEventListener("click", ()=> {
     likeIcon.style.display = "inline-block";
@@ -75,37 +74,32 @@ likeFilledIcon.addEventListener("click", ()=> {
 // COMMENT FUNCTION
 
 function handleForm(event) {
-    event.preventDefault();
-    var commentUser = document.querySelector("input[name='Name']").value;
-    var commentText = document.querySelector("#commentText").value;
-    var commentList = document.querySelector(".commentList");
+  event.preventDefault();
+  var commentUser = document.querySelector("input[name='Name']").value;
+  var commentText = document.querySelector("#commentText").value;
+  var commentList = document.querySelector(".commentList");
     
-    var commentCount = document.querySelector(".commentCount") ;
-    commentCount.innerHTML = parseInt(commentCount.innerHTML) + 1;
+  var commentCount = document.querySelector(".commentCount") ;
+  commentCount.innerHTML = parseInt(commentCount.innerHTML) + 1;
 
-    //for empty username and comment section
-    if(commentText.length === 0 || commentUser.length === 0) {
-      alert("Name and comment field can't be empty");
-      return;               
-    } 
-
-    var commentArray = [
-      {
-        Name : "Amaan",
-        comment : "The blog is great. Its explanation of A.I. is very simple and easy"
-      }
-    ];
-
-    //new comment
-    var comment = {
-      Name : commentUser,
-      comment : commentText
-    }
-    
-    commentArray.push(comment);
-
-    var commentHTML = `<div class='comment border-start border-dark border-3 rounded-end shadow w-100 p-4 my-3 bg-light'><h3>${comment.Name}</h1><p>&nbsp; > ${commentText}</p></div>`
-    
-    commentList.innerHTML += commentHTML ;
-  
+  //for empty username or comment 
+  if(commentText.length === 0 || commentUser.length === 0) {
+    alert("Name and comment field can't be empty");
+    return;               
   }
+  
+  var commentContainer = document.createElement("div");
+  var username = document.createElement("h3");
+  var text = document.createElement("p");
+
+  commentContainer.classList.add('comment','border-start','border-dark','border-3','rounded-end','shadow','w-100','p-4','my-3','bg-light');
+  username.innerHTML = commentUser;
+  text.innerHTML = "> "+commentText;
+
+  commentList.appendChild(commentContainer);
+  commentContainer.appendChild(username);
+  commentContainer.appendChild(text);
+
+    
+}
+  
